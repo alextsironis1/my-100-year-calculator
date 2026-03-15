@@ -11,4 +11,6 @@ age = st.number_input("How old are you?", min_value=0, max_value=120)
 if st.button("Υπολόγισε"):
     current_year = datetime.now().year
     years_to_100 = current_year + (100 - age)
+    days_to_100 = (100 - age) * 365
     st.write(f"{name}, you will turn 100 in the year {years_to_100}!")
+    st.write(f"That is {days_to_100} days")
